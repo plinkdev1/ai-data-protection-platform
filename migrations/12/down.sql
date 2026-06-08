@@ -1,0 +1,6 @@
+
+UPDATE policy_catalog SET 
+  template_content = 'ISMS Charter\n\nDocument Owner: Chief Information Security Officer (CISO)\nApproved By: Board of Directors\nEffective Date: [DD/MM/YYYY]\nReview Cycle: Annual\n\nPurpose\nThis ISMS Charter establishes the framework, responsibilities, and principles for the management of information security at [Company Name]. It ensures the confidentiality, integrity, and availability of information assets in alignment with ISO/IEC 27001 and the EU NIS2 Directive.\n\nScope\nApplies to:\n- All employees, contractors, and third-party service providers\n- All systems, applications, and data owned or processed by [Company Name]\n\nPrinciples\n- Risk-Based Approach: Regular risk assessments to identify and treat risks\n- Governance: The CISO reports quarterly to the Board on ISMS performance\n- Continuous Improvement: ISMS effectiveness is reviewed annually\n- Compliance: The ISMS supports compliance with GDPR, NIS2, and contractual obligations\n\nResponsibilities\n- Board of Directors: Oversight and approval of ISMS policy and budget\n- CISO: Implementation, monitoring, and continuous improvement of ISMS\n- Employees & Contractors: Adherence to security policies and training'
+WHERE policy_key = 'eu_isms_charter';
+
+DELETE FROM policy_catalog WHERE policy_key IN ('comprehensive_faq_system', 'digital_terms_of_service');
