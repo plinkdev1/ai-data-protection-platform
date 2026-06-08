@@ -6,30 +6,27 @@
 
 ## Screens
 
-### Desktop
 <p align="center"><img src="screenshots/01.png" width="800"/></p>
 <p align="center">
   <img src="screenshots/03.png" width="390"/>
+  <img src="screenshots/04.png" width="390"/>
+</p>
+<p align="center">
   <img src="screenshots/05.png" width="390"/>
+  <img src="screenshots/06.png" width="390"/>
 </p>
 <p align="center">
   <img src="screenshots/07.png" width="390"/>
+  <img src="screenshots/08.png" width="390"/>
+</p>
+<p align="center">
   <img src="screenshots/09.png" width="390"/>
-</p>
-<p align="center"><img src="screenshots/11.png" width="800"/></p>
-
-### Mobile
-<p align="center">
-  <img src="screenshots/02.png" width="200"/>
-  <img src="screenshots/04.png" width="200"/>
-  <img src="screenshots/06.png" width="200"/>
+  <img src="screenshots/10.png" width="390"/>
 </p>
 <p align="center">
-  <img src="screenshots/08.png" width="200"/>
-  <img src="screenshots/10.png" width="200"/>
-  <img src="screenshots/12.png" width="200"/>
+  <img src="screenshots/11.png" width="390"/>
+  <img src="screenshots/12.png" width="390"/>
 </p>
-
 ## What It Is
 
 DPOhub turns the work of a Data Protection Officer into a guided, AI-assisted platform. Organizations and individuals can assess their obligations, manage policies, run data discovery, and stay aligned with the frameworks and laws that apply to them — without needing a full in-house compliance team.
@@ -93,3 +90,4 @@ Prototype. Front-end is functional; backend runs on Cloudflare Workers + D1 (sch
 ## Disclaimer
 
 Prototype / portfolio artifact. Does not constitute legal or compliance advice. Framework and law names are referenced descriptively.
+
