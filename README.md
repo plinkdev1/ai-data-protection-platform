@@ -1,93 +1,124 @@
-﻿# Privacy Guard AI — DPOhub
+﻿<div align="center">
 
-![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020) ![Apollo](https://img.shields.io/badge/Apollo-GraphQL-311C87) ![React](https://img.shields.io/badge/React-Vite-61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6) ![D1](https://img.shields.io/badge/Cloudflare-D1-F38020) ![status](https://img.shields.io/badge/status-prototype-orange)
+# Privacy Guard
 
-> AI-powered Data Protection Officer (DPO) as a service — a compliance platform that unifies GDPR with 20+ global security frameworks and privacy laws, delivered across B2B, B2C, and API channels, with an AI consultation assistant at its core.
+**An AI-assisted data-protection (DPO) platform**
 
-## Screens
+[![Next.js](https://img.shields.io/badge/Next.js-000?logo=next.js&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Status](https://img.shields.io/badge/status-MVP-orange)]()
 
-<p align="center"><img src="screenshots/01.png" width="800"/></p>
-<p align="center">
-  <img src="screenshots/03.png" width="390"/>
-  <img src="screenshots/04.png" width="390"/>
-</p>
-<p align="center">
-  <img src="screenshots/05.png" width="390"/>
-  <img src="screenshots/06.png" width="390"/>
-</p>
-<p align="center">
-  <img src="screenshots/07.png" width="390"/>
-  <img src="screenshots/08.png" width="390"/>
-</p>
-<p align="center">
-  <img src="screenshots/09.png" width="390"/>
-  <img src="screenshots/10.png" width="390"/>
-</p>
-<p align="center">
-  <img src="screenshots/11.png" width="390"/>
-  <img src="screenshots/12.png" width="390"/>
-</p>
-## What It Is
+*An AI co-pilot for data protection officers - requests, records, and compliance in one place.*
 
-DPOhub turns the work of a Data Protection Officer into a guided, AI-assisted platform. Organizations and individuals can assess their obligations, manage policies, run data discovery, and stay aligned with the frameworks and laws that apply to them — without needing a full in-house compliance team.
+</div>
 
-## Compliance Coverage
+---
 
-**Security frameworks:** ISO/IEC 27001, ISO/IEC 27701, NIST CSF, CIS Controls, SOC 2, PCI DSS, ISO 22301, NIST SP 800-53 / FedRAMP, COBIT, ITIL.
+## What Is This?
 
-**Privacy & data-protection laws:** GDPR and ePrivacy (EU), NIS2 (EU), HIPAA, GLBA, SOX, CCPA / CPRA (California), NYDFS (US), PIPL (China), LGPD (Brazil).
+Privacy Guard is an AI-assisted platform for data protection officers. It helps manage data-subject requests, maintain records of processing, draft policies, and track GDPR-style compliance tasks from a single dashboard.
 
-## Three Channels
-
-| Channel | For | Focus |
-|---|---|---|
-| **B2B** | Enterprises | Multi-framework dashboards, policy management, DPO workflows |
-| **B2C / SMB** | Individuals & small teams | Guided, self-serve privacy compliance |
-| **API** | Developers / platforms | Programmatic compliance via GraphQL |
+---
 
 ## Features
 
-- **AI consultation assistant** — voice and chat guidance for compliance questions, grounded in a curated knowledge base.
-- **Policy catalog & management** — a library of policies across frameworks, with creation and tracking.
-- **Data discovery & mapping** — discovery-form pipelines to map data flows and obligations.
-- **Compliance dashboards** — admin and user dashboards with events, tasks, and status.
-- **Service tiers** — subscription tiers for different organization sizes.
-- **Ratings & marketplace** — a layer for rating and matching DPO / auditor services.
+| Feature | Description | Status |
+|---|---|:---:|
+| Compliance dashboard | Tasks, status, and risk at a glance | ✅ |
+| Data-subject requests | Intake and track access/deletion | ✅ |
+| AI DPO assistant | Drafts policies and guidance | 🚧 |
+| Records of processing | Maintain the processing register | 🚧 |
+| Audit trail | Activity and evidence log | 🚧 |
 
-## Architecture
+---
 
-Built as a Cloudflare-native application:
+## How It Works
 
-- **Frontend:** React + Vite single-page app.
-- **Backend / API:** Cloudflare Workers with Apollo GraphQL.
-- **Database:** Cloudflare D1 (SQL migrations ship in `migrations/`).
-- **Auth:** Google OAuth.
-- **Deploy:** Wrangler (Cloudflare).
+```
+Data subjects ──▶ requests (access · deletion)
+        │
+        ▼
+AI DPO assistant ◀──▶ records of processing · policies
+        │
+        ▼
+Compliance dashboard (GDPR tasks · audits)
+```
+
+---
 
 ## Tech Stack
 
 | Layer | Technology |
-|---|---|
-| Frontend | React · Vite · TypeScript · Tailwind |
-| API | Apollo GraphQL on Cloudflare Workers |
-| Database | Cloudflare D1 |
-| Auth | Google OAuth |
-| Deploy | Wrangler / Cloudflare |
+|-------|------------|
+| Frontend | Next.js, React, TypeScript |
+| Styling | Tailwind CSS, shadcn/ui |
+| AI | Assistant / drafting layer |
 
-## Run It
+---
 
-```bash
-npm install --legacy-peer-deps
-npm run dev          # frontend (Vite)
+## Project Structure
+
+```
+privacy-guard-ai-dpo-platform/
+migrations/
+   1/
+   10/
+   11/
+   12/
+   13/
+   14/
+src/
+   react-app/
+   shared/
+   worker/
+.gitignore
+eslint.config.js
+index.html
+package.json
+package-lock.json
+postcss.config.js
+README.md
+tailwind.config.js
+tsconfig.app.json
+tsconfig.frontend.json
+tsconfig.json
+tsconfig.node.json
+tsconfig.worker.json
+vite.config.ts
+wrangler.json
 ```
 
-For the full stack (API + D1), run the Worker with Wrangler and apply the SQL in `migrations/`.
+---
 
-## Status
+## Screenshots
 
-Prototype. Front-end is functional; backend runs on Cloudflare Workers + D1 (schema migrations included). Not audited; not legal advice.
+<table>
+<tr><td width="50%"><img src="screenshots/01.png" width="100%" /></td><td width="50%"><img src="screenshots/03.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/04.png" width="100%" /></td><td width="50%"><img src="screenshots/05.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/06.png" width="100%" /></td><td width="50%"><img src="screenshots/07.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/08.png" width="100%" /></td><td width="50%"><img src="screenshots/09.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/10.png" width="100%" /></td><td width="50%"><img src="screenshots/11.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/12.png" width="100%" /></td></tr>
+</table>
 
-## Disclaimer
+---
 
-Prototype / portfolio artifact. Does not constitute legal or compliance advice. Framework and law names are referenced descriptively.
+## Getting Started
 
+```bash
+npm install --legacy-peer-deps --ignore-scripts
+npx next dev
+```
+
+---
+
+## Notes
+
+Shared as a portfolio artifact demonstrating product and system design. Early prototype, not a finished product; not legal advice.
+
+<div align="center">
+
+MIT
+
+</div>
