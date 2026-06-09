@@ -1,6 +1,6 @@
-﻿<div align="center">
+<div align="center">
 
-# Privacy Guard
+# AI Data-Protection Platform
 
 **An AI-assisted data-protection (DPO) platform**
 
